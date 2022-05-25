@@ -8,5 +8,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build
-        run: mvn clean compile
-        working-directory: ./attestation-aws
+        run: mvn -B clean compile test
